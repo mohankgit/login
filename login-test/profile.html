@@ -26,11 +26,6 @@
 </body>
 <script>
   let name = localStorage.getItem('name') ? localStorage.getItem('name') : ''
-  console.log(name);
-  if (name == '') {
-    alert('U need to login first');
-    window.location.href = "login.html";
-  }
 
   function Logout() {
     localStorage.removeItem('name');
